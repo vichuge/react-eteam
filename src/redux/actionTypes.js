@@ -1,0 +1,1 @@
+export const ALL_ELEMENTS = 'ALL_ELEMENTS';
