@@ -1,11 +1,16 @@
-import React/* , { useState, useEffect } */ from 'react';
-import { useSelector/* , useDispatch */ } from 'react-redux';
-// import { useHistory } from 'react-router-dom';
-// import { getList } from '../redux/actions';
+import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getList } from '../redux/actions';
 
 const Home = () => {
-  const list = useSelector((state) => state.list);
+  const [list, setList] = useState({ elements: [] });
+  const dispatch = useDispatch();
+  const reduxList = useSelector((state) => state.list);
   console.log(list);
+  useEffect(() => {
+    if (!list.status) dispatch(getList());
+    setList(reduxList);
+  }, [list.status, dispatch, reduxList]);
   return (
     <>
       <table>
@@ -20,14 +25,14 @@ const Home = () => {
           </tr>
         </thead>
         <tbody>
-          {list.elements.map((pokemon, index) => (
+          {list.elements.map((person, index) => (
             <tr key={index}>
-              <td>{pokemon.name}</td>
-              <td>{pokemon.addres}</td>
-              <td>{pokemon.city}</td>
-              <td>{pokemon.region}</td>
-              <td>{pokemon.country}</td>
-              <td>{pokemon.birthday}</td>
+              <td>{person.name}</td>
+              <td>{person.addres}</td>
+              <td>{person.city}</td>
+              <td>{person.region}</td>
+              <td>{person.country}</td>
+              <td>{person.birthday}</td>
             </tr>
           ))}
         </tbody>

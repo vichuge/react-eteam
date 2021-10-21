@@ -1,8 +1,8 @@
 import { ALL_ELEMENTS } from '../actionTypes';
-import data from '../../list/data.json';
 
 const initialState = {
-  elements: data,
+  elements: [],
+  status: false,
 };
 
 const list = (state = initialState, action) => {
@@ -10,6 +10,7 @@ const list = (state = initialState, action) => {
     case ALL_ELEMENTS:
       return {
         elements: action.payload,
+        status: true,
       };
     default:
       return state;
