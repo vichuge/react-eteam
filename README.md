@@ -1,13 +1,13 @@
-# React Pokémon Catalogue (Catalogue of recipes)
+# Names table
 
-<p align="center">A pokémon list made with ReactJS. This includes pokemon list, profile for each pokemon when you click it and filter the pokemons according to generation.</p>
+<p align="center">A table for people with design, additionally to the project it's possible to drag and drop columns on different places inside the table.</p>
 
 ![screenshot]()
 ![screenshot]()
 
 ## Live demo
 
-[Live demo here!]()
+[Live demo here!](https://vichuge.github.io/react-eteam/)
 
 ## Built With
 
@@ -24,8 +24,8 @@
 
 ### Setup
 
-- Open Terminal
-- Run `git clone https://github.com/vichuge/###`
+- Open Terminal on desired folder to install
+- Run `git clone https://vichuge.github.io/react-eteam/`
 - cd react-eteam
 - npm install or npm i
 - npm start
