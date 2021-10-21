@@ -3,7 +3,7 @@ import { combineReducers } from 'redux';
 import listReducer from './list';
 
 const rootReducer = combineReducers({
-  list: listReducer
+  list: listReducer,
 });
 
 export default rootReducer;

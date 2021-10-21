@@ -6,7 +6,6 @@ const Home = () => {
   const [list, setList] = useState({ elements: [] });
   const dispatch = useDispatch();
   const reduxList = useSelector((state) => state.list);
-  console.log(list);
   useEffect(() => {
     if (!list.status) dispatch(getList());
     setList(reduxList);
@@ -25,8 +24,8 @@ const Home = () => {
           </tr>
         </thead>
         <tbody>
-          {list.elements.map((person, index) => (
-            <tr key={index}>
+          {list.elements.map((person) => (
+            <tr key={person.name}>
               <td>{person.name}</td>
               <td>{person.addres}</td>
               <td>{person.city}</td>

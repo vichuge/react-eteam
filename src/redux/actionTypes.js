@@ -1,1 +1,2 @@
 export const ALL_ELEMENTS = 'ALL_ELEMENTS';
+export const SOME_ELEMENTS = 'SOME_ELEMENTS';

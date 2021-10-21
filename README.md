@@ -14,6 +14,8 @@
 - JavaScript
 - HTML5
 - CSS3
+- Ubuntu 20.04 (WSL)
+- node 12.22.6
 - npm 6.14.15
 - React ^17.0.2
 - Redux ^4.1.1
