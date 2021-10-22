@@ -4,11 +4,22 @@
 
 ![screenshot](./screenshots/screenshot.png)
 
+## Trade-offs during the design
+
+- I enjoyed doing the react - redux structure and use axios to use an API rest service with js, during all this week I've worked only with Ruby on Rails, so, it was good to remember this.
+- This were the second project where I use bulma as a framework design. I like this framework, more than bootstrap but I consider materialize is good too for material design concept.
+- I sttrugle a little bit to understand the concept `copy the first column, then add it to the second but don't forget to copy the info on second column too because you'll need it`. Thas was a little challenging to me.
+
 ## Something to improve?
 
 - Something I didn't like it where the design when the mouse drag an element, the user are able to see the column name and how this "fly" on the screen to be inside another place, that's good, but would be excellent if the user could observe the "ghost" to the entire column being moved, and maybe the other columns moving to the sides to be according the new position (as trello, for example).
 - Not all the variables on home component are props, this because some elements fails when the variable needs to carry a lot of information.
 - Another thing I'd improve is the style, I understand is not part of the project but, I think is something to improve.
+
+## How to use?
+
+- You're able to scroll the page to see all the info in the page.
+- To drag and drop use left click on a header column (wathever you want), then (holding down the click) drag the element to another header column position, then drop and you'll see how the column has been changed to the last one.
 
 ## Live demo
 
