@@ -2,12 +2,14 @@
 .table tfoot {
   background-color: black;
 }
+
 .table thead td,
 .table thead th,
 .table tfoot td,
 .table tfoot th {
-  color:white;
+  color: white;
 }
+
 .table.is-striped tbody tr:not(.is-selected):nth-child(even) {
   background-color: #a19f9f;
 }
