@@ -95,7 +95,9 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className="container">
+      <h1 className="title">Hello there!</h1>
+      <h2 className="subtitle">A table with drag and drop columns</h2>
       <table className="table is-striped is-fullwidth">
         <thead>
           <tr>
@@ -130,7 +132,7 @@ const Home = () => {
           ))}
         </tbody>
       </table>
-    </>
+    </div>
   );
 };
 
