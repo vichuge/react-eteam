@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# The table
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">A table for people with design, additionally to the project it's possible to drag and drop columns on different places inside the table. The project is made with Bulma.io for simple design and made with react + redux, the project create a simple API rest to be used to call the data and work according to that. I hope you can see the effort on this little project.</p>
 
-## Available Scripts
+![screenshot](./screenshots/screenshot.png)
 
-In the project directory, you can run:
+## Trade-offs during the design
 
-### `yarn start`
+- I enjoyed doing the react - redux structure and use axios to use an API rest service with js, during all this week I've worked only with Ruby on Rails, so, it was good to remember this.
+- This were the second project where I use bulma as a framework design. I like this framework, more than bootstrap but I consider materialize is good too for material design concept.
+- I sttrugle a little bit to understand the concept `copy the first column, then add it to the second but don't forget to copy the info on second column too because you'll need it`. Thas was a little challenging to me.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Something to improve?
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Something I didn't like it where the design when the mouse drag an element, the user are able to see the column name and how this "fly" on the screen to be inside another place, that's good, but would be excellent if the user could observe the "ghost" to the entire column being moved, and maybe the other columns moving to the sides to be according the new position (as trello, for example).
+- Not all the variables on home component are props, this because some elements fails when the variable needs to carry a lot of information.
+- Another thing I'd improve is the style, I understand is not part of the project but, I think is something to improve.
 
-### `yarn test`
+## How to use?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- You're able to scroll the page to see all the info in the page.
+- To drag and drop use left click on a header column (wathever you want), then (holding down the click) drag the element to another header column position, then drop and you'll see how the column has been changed to the last one.
 
-### `yarn build`
+## Live demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Live demo here!](https://vichuge.github.io/react-eteam/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Data
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[A basic api service to the project here!](https://vichuge.github.io/react-eteam/data.json)
 
-### `yarn eject`
+## Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- JavaScript
+- HTML5
+- CSS3
+- Ubuntu 20.04 (WSL)
+- node 12.22.6
+- npm 6.14.15
+- React ^17.0.2
+- Redux ^4.1.1
+- Bulma
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Text Editor (VSCode is suggested.)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Setup
 
-## Learn More
+- Open Terminal on desired folder to install
+- Run `git clone https://vichuge.github.io/react-eteam/`
+- cd react-eteam
+- npm install or npm i
+- npm start
+- npm run test (if you would like to test the project)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Victor Pacheco**
 
-### Code Splitting
+- GitHub: [@vichuge](https://github.com/vichuge)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/victorpachecoflores/)
+- Twitter: [@Pachecofloresv](https://twitter.com/Pachecofloresv)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions, issues and feature requests are welcome! 
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Show your support
 
-### Advanced Configuration
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📝 License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.
